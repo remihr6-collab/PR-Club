@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rejoindre le Club — The PR Club</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero{padding:140px 48px 80px;background:var(--white);}
+.page-hero-inner{max-width:1200px;margin:0 auto;}
+.rejoindre-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.form-box{background:var(--white);border:1px solid var(--border);padding:48px;}
+@media(max-width:960px){.page-hero{padding:100px 24px 60px;}.rejoindre-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="section-label rv">Candidature</p>
+    <h1 class="section-title rv">Rejoindre<br><em>The PR Club</em></h1>
+    <div class="divider-gold"></div>
+
+    <div class="rejoindre-grid">
+      <div class="rv">
+        <p style="font-size:13px;color:var(--grey);line-height:1.85;margin-bottom:32px;">L'adhésion se fait sur candidature et validation par notre comité. Nous cherchons des femmes au parcours inspirant, engagées dans leur métier, avec un vrai ancrage dans les relations presse ou la communication en Suisse.</p>
+        <div style="background:var(--dark);">
+          <div class="join-step"><div class="join-step-n">01</div><div><div class="join-step-title">Formulaire</div><div class="join-step-text">Complétez votre candidature ci-contre avec votre parcours et vos motivations.</div></div></div>
+          <div class="join-step"><div class="join-step-n">02</div><div><div class="join-step-title">Validation</div><div class="join-step-text">Notre comité examine votre profil sous 5 jours ouvrés et vous recontacte.</div></div></div>
+          <div class="join-step"><div class="join-step-n">03</div><div><div class="join-step-title">Bienvenue</div><div class="join-step-text">Vous recevez vos identifiants et un accès complet à l'espace membre.</div></div></div>
+        </div>
+        <div style="margin-top:32px;background:var(--cream2);border:1px solid var(--border);padding:24px 28px;">
+          <p style="font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Déjà membre ?</p>
+          <p style="font-size:12px;color:var(--grey);margin-bottom:16px;">Accédez à votre espace membre avec vos identifiants.</p>
+          <a href="membre.html" class="btn btn-outline" style="display:inline-block;">Connexion →</a>
+        </div>
+      </div>
+
+      <div class="form-box rv">
+        <div id="form-content">
+          <div class="form-row"><label class="form-label">Prénom et nom *</label><input type="text" class="form-input" id="ins-name" placeholder="Sophie Martin"></div>
+          <div class="form-row"><label class="form-label">Email professionnel *</label><input type="email" class="form-input" id="ins-email" placeholder="sophie@agence.ch"></div>
+          <div class="form-row"><label class="form-label">Poste actuel *</label><input type="text" class="form-input" id="ins-poste" placeholder="Directrice de communication, attachée de presse..."></div>
+          <div class="form-row"><label class="form-label">Entreprise / Agence</label><input type="text" class="form-input" id="ins-company" placeholder="Agence XYZ / Freelance"></div>
+          <div class="form-row"><label class="form-label">LinkedIn</label><input type="text" class="form-input" id="ins-linkedin" placeholder="linkedin.com/in/votrenom"></div>
+          <div class="form-row"><label class="form-label">Votre motivation *</label><textarea class="form-textarea" id="ins-msg" placeholder="Pourquoi souhaitez-vous rejoindre The PR Club ? Qu'espérez-vous apporter et recevoir ?"></textarea></div>
+          <button class="btn btn-gold" style="width:100%;" onclick="submitForm()">Envoyer ma candidature →</button>
+        </div>
+        <div class="form-success" id="form-success">
+          ✦ Votre candidature a bien été reçue.<br>Le comité vous répondra sous 5 jours ouvrés à l'adresse indiquée.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="shared.js"></script>
+<script>
+renderNav('rejoindre.html');
+renderFooter();
+function submitForm() {
+  const name = document.getElementById('ins-name').value;
+  const email = document.getElementById('ins-email').value;
+  const poste = document.getElementById('ins-poste').value;
+  const msg = document.getElementById('ins-msg').value;
+  if (!name || !email || !poste || !msg) {
+    alert('Merci de remplir tous les champs obligatoires (*).');
+    return;
+  }
+  document.getElementById('form-content').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+</body>
+</html>

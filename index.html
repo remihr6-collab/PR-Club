@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The PR Club — Collectif de Femmes Engagées · Suisse</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.hero{min-height:100vh;padding:140px 48px 80px;display:flex;align-items:center;background:var(--cream);position:relative;overflow:hidden;}
+.hero-bg{position:absolute;top:-100px;right:-150px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,var(--gold-pale) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-light);padding:8px 16px;margin-bottom:28px;}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(46px,6vw,76px);line-height:1.05;font-weight:300;margin-bottom:24px;}
+.hero-title em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:13px;color:var(--grey);line-height:1.9;max-width:440px;margin-bottom:40px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-visual{display:flex;align-items:center;justify-content:center;}
+.circle-outer{width:380px;height:380px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;}
+.circle-inner{width:280px;height:280px;border-radius:50%;background:var(--gold-pale);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;}
+.circle-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--gold);line-height:1;}
+.circle-label{font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--grey);margin-top:6px;}
+.circle-tag{position:absolute;background:var(--white);border:1px solid var(--border);padding:10px 16px;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dark);}
+.circle-tag.t1{top:40px;right:-20px;}
+.circle-tag.t2{bottom:60px;left:-30px;}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
+.why-card{background:var(--cream);padding:36px 32px;}
+.why-title{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:10px;}
+.why-desc{font-size:12px;color:var(--grey);line-height:1.75;}
+.join-section{background:var(--dark);padding:100px 48px;}
+.join-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.join-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,56px);font-weight:300;color:var(--white);line-height:1.1;margin-bottom:20px;}
+.join-title em{font-style:italic;color:var(--gold);}
+.join-sub{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:36px;}
+@media(max-width:960px){
+  .hero{padding:100px 24px 64px;}
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-visual{display:none;}
+  .join-section{padding:72px 24px;}
+  .join-inner{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .hero-actions{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag rv">Collectif de femmes engagées · Suisse</div>
+      <h1 class="hero-title rv">Des femmes qui<br>font <em>avancer</em><br>les marques</h1>
+      <p class="hero-sub rv">The PR Club réunit des professionnelles des relations presse, de la communication et du branding en Suisse. Un réseau pour collaborer, s'inspirer et grandir ensemble.</p>
+      <div class="hero-actions rv">
+        <a href="rejoindre.html" class="btn btn-gold">Rejoindre le Club</a>
+        <a href="mission.html" class="btn btn-outline">Notre mission</a>
+      </div>
+    </div>
+    <div class="hero-visual rv">
+      <div class="circle-outer">
+        <div class="circle-inner">
+          <span class="circle-num">50+</span>
+          <span class="circle-label">Membres actives</span>
+        </div>
+        <div class="circle-tag t1">Relations Presse</div>
+        <div class="circle-tag t2">Branding & Com</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Relations Presse</span><span class="dot">·</span><span>Branding</span><span class="dot">·</span><span>Communication</span><span class="dot">·</span><span>Networking</span><span class="dot">·</span><span>Influence</span><span class="dot">·</span><span>Médias Suisses</span><span class="dot">·</span><span>Stratégie</span><span class="dot">·</span><span>Relations Presse</span><span class="dot">·</span><span>Branding</span><span class="dot">·</span><span>Communication</span><span class="dot">·</span><span>Networking</span><span class="dot">·</span><span>Influence</span><span class="dot">·</span><span>Médias Suisses</span><span class="dot">·</span><span>Stratégie</span><span class="dot">·</span>
+  </div>
+</div>
+
+<div class="section" style="background:var(--white);">
+  <div class="section-inner">
+    <p class="section-label rv">Pourquoi nous rejoindre</p>
+    <h2 class="section-title rv">Un club, une <em>communauté</em>,<br>une force collective</h2>
+    <div class="divider-gold"></div>
+    <div class="why-grid rv">
+      <div class="why-card"><p class="why-title">Networking</p><p class="why-desc">Accédez à un annuaire exclusif de professionnelles soigneusement sélectionnées dans les relations presse, la com et le branding en Suisse.</p></div>
+      <div class="why-card"><p class="why-title">Contenus exclusifs</p><p class="why-desc">Insights médias, études de cas, tendances PR — du contenu réservé aux membres pour rester à la pointe de votre secteur.</p></div>
+      <div class="why-card"><p class="why-title">Partenaires privilégiés</p><p class="why-desc">Des remises et avantages exclusifs auprès de marques soigneusement sélectionnées — parce que vous méritez le meilleur.</p></div>
+      <div class="why-card"><p class="why-title">Newsletter membres</p><p class="why-desc">Une newsletter curatée chaque semaine avec les actualités médias suisses et les opportunités de collaboration.</p></div>
+      <div class="why-card"><p class="why-title">Événements privés</p><p class="why-desc">Des rencontres exclusives à Genève, Lausanne et Zurich pour créer des liens qui durent au-delà du digital.</p></div>
+      <div class="why-card"><p class="why-title">Visibilité accrue</p><p class="why-desc">Votre profil référencé dans notre annuaire accessible à toutes les membres actives du Club.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="background:var(--cream2);">
+  <div class="section-inner">
+    <p class="section-label rv">Nos partenaires</p>
+    <h2 class="section-title rv">Des marques qui <em>partagent</em><br>nos valeurs</h2>
+    <div class="divider-gold"></div>
+    <div class="partners-grid rv">
+      <a href="partner-luxe.html" class="partner-card">
+        <div class="partner-logo">L</div>
+        <div class="partner-name">Luxe Beauté</div>
+        <div class="partner-cat">Cosmétiques Premium</div>
+        <div class="partner-desc">Soins haut de gamme pour les professionnelles exigeantes.</div>
+        <span class="partner-remise">−20% membres</span>
+        <span class="partner-more">En savoir plus →</span>
+      </a>
+      <a href="partner-atelier.html" class="partner-card">
+        <div class="partner-logo">A</div>
+        <div class="partner-name">Atelier Press</div>
+        <div class="partner-cat">Formation PR</div>
+        <div class="partner-desc">Formations certifiantes en relations presse et com digitale.</div>
+        <span class="partner-remise">−30% membres</span>
+        <span class="partner-more">En savoir plus →</span>
+      </a>
+      <a href="partner-studio.html" class="partner-card">
+        <div class="partner-logo">S</div>
+        <div class="partner-name">Studio Genève</div>
+        <div class="partner-cat">Photo & Branding</div>
+        <div class="partner-desc">Shooting professionnel et identité visuelle pour votre personal brand.</div>
+        <span class="partner-remise">−15% membres</span>
+        <span class="partner-more">En savoir plus →</span>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="partenaires.html" class="btn btn-outline">Voir tous les partenaires</a>
+    </div>
+  </div>
+</div>
+
+<div class="join-section">
+  <div class="join-inner">
+    <div>
+      <p style="font-size:9px;letter-spacing:0.5em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Rejoindre</p>
+      <h2 class="join-title">Faites partie<br>des femmes qui<br><em>inspirent</em></h2>
+      <p class="join-sub">L'adhésion se fait sur candidature. Nous sélectionnons des profils engagés, inspirants, avec un vrai ancrage dans les relations presse ou la communication en Suisse.</p>
+      <a href="rejoindre.html" class="btn btn-gold">Déposer ma candidature</a>
+    </div>
+    <div class="join-steps">
+      <div class="join-step"><div class="join-step-n">01</div><div><div class="join-step-title">Candidature en ligne</div><div class="join-step-text">Remplissez le formulaire avec votre parcours et votre motivation.</div></div></div>
+      <div class="join-step"><div class="join-step-n">02</div><div><div class="join-step-title">Validation par le comité</div><div class="join-step-text">Notre comité examine votre profil sous 5 jours ouvrés.</div></div></div>
+      <div class="join-step"><div class="join-step-n">03</div><div><div class="join-step-title">Accès au Club</div><div class="join-step-text">Vous recevez vos identifiants et accédez à l'espace membre complet.</div></div></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="shared.js"></script>
+<script>renderNav('index.html');renderFooter();</script>
+</body>
+</html>
