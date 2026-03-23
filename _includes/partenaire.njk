@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <a href="/partenaires" class="back-link">← Partenaires</a>
+    <div class="partner-detail">
+      <div class="partner-avatar-large">{{ page.fileSlug | upper | truncate(1, true, "") }}</div>
+      <p class="section-label">{{ categorie }}</p>
+      <h1 class="section-title">{{ title }}</h1>
+      <div class="divider"></div>
+      {% if description %}
+        <p>{{ description }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
